@@ -10,6 +10,7 @@
 | 属性       		| 类型	     	| 示例		  | 描述              |
 | ------------- 	|:---------:	| -----:	  | ----------:      |
 | alias         |String       |simcom_8888|订阅的别名，根据此来进行推送服务|
+|Tags				|Array			|['permission_12','permission_123']|订阅的标签，根据此来进行推送服务|
 | callback      | function    |           |回调函数           |
 |seq 				| int			| 1231       |调用时传入的会话序列号|
 
@@ -29,6 +30,19 @@
 
 ##### getAlias(callback,seq)
 + 调用此 API 来查询当前别名
+
+##### addTags(tags,callback,seq)
++ 调用此 API 来添加标签
+
+##### setTags(tags,callback,seq)
++ 调用此 API 来重置标签
+
+##### deleteTags(tags,callback,seq)
++ 调用此 API 来删除标签
+
+##### cleanTags(callback,seq)
++ 调用此 API 来清除标签
+
 
 #### 使用Jpush模块
 
